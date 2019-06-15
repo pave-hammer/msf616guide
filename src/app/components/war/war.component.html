@@ -1,0 +1,64 @@
+<div id="main">
+  <div id='intro'>
+    <div>
+      {{warObj.introMessage}}
+    </div><br />
+    <div id="buff-details" *ngFor="let deets of warObj.buffDeets">
+      {{deets}}
+    </div>
+  </div><br />
+  <div id="buff-breakdown">
+    <div id="global">
+      <b>Here is a breakdown of what rooms give which buffs:</b><br />
+      <b>Global Buffs</b>
+      <div *ngFor='let buffInfo of warObj.buffBreakdown.globalBuffs'>
+        {{buffInfo}}
+      </div>
+    </div>
+    <div id="adjacent">
+      <b>Adjacent Buffs</b>
+      <div *ngFor='let buffInfo of warObj.buffBreakdown.adjacentBuffs'>
+        {{buffInfo}}
+      </div>
+    </div>
+    <div id="room">
+      <b>Room Buffs</b>
+      <div *ngFor='let buffInfo of warObj.buffBreakdown.roomBuffs'>
+        {{buffInfo}}
+      </div>
+    </div><br />
+    <div>
+      {{warObj.buffBreakdown.meaningMessage}}
+    </div>
+  </div><br />
+  <div id="def-priority">
+    <div id='def-intro'>
+      {{warObj.defensePriority.introMessage}}
+    </div>
+    <div *ngFor='let def of warObj.defensePriority.roomDeets'>
+      {{def}}
+    </div>
+  </div><br />
+  <div id="off-priority">
+    <div id='off-intro'>
+      {{warObj.offensePriority.introMessage}}
+    </div>
+    <div *ngFor='let off of warObj.offensePriority.roomDeets'>
+      {{off}}
+    </div>
+  </div><br />
+  <div id='overall-thoughts'>
+    <b>{{warObj.overallThoughts.message}}</b><br />
+    {{warObj.overallThoughts.body}}
+  </div><br />
+  <div id='team-building'>
+    <b>{{warObj.teamBuilding.message}}</b><br />
+    {{warObj.teamBuilding.bodyOne}}<br /><br />
+    <img src='https://i.imgur.com/1ln5y6V.jpg' alt='' class='img-fluid'><br /><br />
+    {{warObj.teamBuilding.bodyTwo}}
+  </div><br />
+  <div id="fin">
+    {{warObj.fin}}<br />
+    <a href="https://www.youtube.com/watch?v=zez2Mbw9XD8">https://www.youtube.com/watch?v=zez2Mbw9XD8</a>
+  </div>
+</div>

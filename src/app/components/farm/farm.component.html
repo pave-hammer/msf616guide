@@ -1,0 +1,31 @@
+<div id="main">
+  <div id="intro">
+    {{farmObj.introMessage}}<br /><br />
+    {{farmObj.guideMessage}}
+  </div><br />
+  <div id="phase-one">
+    {{farmObj.phaseOneIntro}}<br /><br />
+    {{farmObj.phaseOneDeets}}<br /><br />
+    <div *ngFor="let phase of farmObj.phaseOneBench">
+      {{phase}}
+    </div>
+  </div><br />
+  <div id="phase-two">
+    {{farmObj.phaseTwo}}
+  </div><br />
+  <div id="phase-three">
+    {{farmObj.phaseThree}}<br /><br />
+    <div *ngFor="let phase of farmObj.phaseThreeBench">
+      {{phase}}
+    </div>
+  </div><br />
+  <div id="phase-four">
+    {{farmObj.phaseFour}}<br /><br />
+    <img src="https://i.imgur.com/FEs0LJS.png" class="img-fluid" alt=''>
+  </div><br />
+  <div id='fin'>
+    {{farmObj.finOne}}<br />
+    <a href="https://www.youtube.com/watch?v=AHMelp2B9mo ">https://www.youtube.com/watch?v=AHMelp2B9mo</a><br /><br />
+    {{farmObj.finTwo}}
+  </div>
+</div>

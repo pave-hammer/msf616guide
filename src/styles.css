@@ -1,0 +1,8 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 125px 50px 125px;
+}

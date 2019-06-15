@@ -1,0 +1,31 @@
+<div id="main">
+  <div id="intro">
+    {{raidObj.introMessage}}<br /><br />
+    <img src="https://i.imgur.com/YbiKdIs.png" class="img-fluid" alt=''>
+  </div><br />
+  <div id="energy-refresh">
+    {{raidObj.raidEnergy.message}}<br /><br />
+    <table>
+      <tr *ngFor="let energy of raidObj.raidEnergy.energyRefresh">
+        <td>{{energy}}</td>
+      </tr>
+    </table><br />
+    {{raidObj.raidEnergy.energyFin}}
+  </div><br />
+  <div id="raidStrat">
+    {{raidObj.raidStrat.message}}<br /><br />
+    <img src="https://i.imgur.com/9l7D5wS.jpg" class="img-fluid" alt=''><br /><br />
+    {{raidObj.raidStrat.routeMessage}}<br /><br />
+    <img src="https://i.imgur.com/pA2dTmC.jpg" class="img-fluid" alt=''><br /><br />
+    {{raidObj.raidStrat.redRoute}}<br /><br />
+    <img src="https://i.imgur.com/EdmZGHl.jpg" class="img-fluid" alt=''><br /><br />
+    {{raidObj.raidStrat.redAndBlueRoutes}}<br /><br />
+    {{raidObj.raidStrat.blueMovesText}}<br /><br />
+    <img src="https://i.imgur.com/pSHKC2M.jpg" class="img-fluid" alt=''><br /><br />
+    {{raidObj.raidStrat.redBlueFin}}<br /><br />
+    {{raidObj.raidStrat.raidStratKey}}<br /><br />
+  </div>
+  <div id="rules">
+    {{raidObj.rules}}
+  </div>
+</div>
